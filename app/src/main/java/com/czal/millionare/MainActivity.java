@@ -644,30 +644,36 @@ public class MainActivity extends Activity implements OnClickListener {
 		// /
 		database.SoruEkle(ha, vt, "The First Turkish Psychological Novel? ", "Eylül",
 				"Çalı Kuşu", "Araba Sevdası", "Les Misérables", 2);
+
 		database.SoruEkle(ha, vt, "What is the name of the sword of Hz. Ali?", "Zulfiqar", "Abuzer", "Ebu Şuyh", "Ismet", 2);
+
 		database.SoruEkle(ha, vt, "In which year was the monarchy abolished?", "November 1, 1922", "November 1, 1923",
 				"November 23, 1922", "April 23, 1923", 2);
+
 		database.SoruEkle(ha, vt, "What Turkish sport is played on horseback?", "Cirit", "Horse Racing", "Polo", "Cricket", 2);
+
 		database.SoruEkle(ha, vt, "Which of the following is not a primary color in the subtractive color model?", "green",
 				"red", "blue", "yellow",2);
+
 		database.SoruEkle(ha, vt, "What is the value of 3² (3 squared)?", "9",
 				"6", "27", "12",2);
 		// //
 		database.SoruEkle(ha, vt, "How many years did the Tulip Era last?", "12", "15", "11", "Until the Tulips Withered", 3);
 		database.SoruEkle(ha, vt, "Who established the first printing press in Turkey?", "Ibrahim Müteferrika", "Yazar Hüseyin",
 				"Ibn-i Galip", "Ismet Inönü", 3);
-		database.SoruEkle(
-				ha,
-				vt,
-				"Who is the first Turkish painter whose painting 'Pomegranates and Quinces' was accepted into the Louvre Museum while he was alive?",
-				"Şeker Ahmet Paşa", "Naci Kalmukoğlu", "Osman Hamdi Bey",
-				"İbrahim Valla", 3);
-		database.SoruEkle(ha, vt,
-				"Who is the first Turkish artist to participate in Eurovision?",
-				"Semiha Yankı", "Sertap Erener", "Ajda Pekkan", "Ergin Koray",
-				3);
+		database.SoruEkle(ha, vt, "Who is the first Turkish painter whose painting 'Pomegranates and Quinces' was accepted into the Louvre Museum while he was alive?",
+				"Şeker Ahmet Paşa", "Naci Kalmukoğlu", "Osman Hamdi Bey", "İbrahim Valla", 3);
+
+		database.SoruEkle(ha, vt, "Who is the first Turkish artist to participate in Eurovision?",
+				"Semiha Yankı", "Sertap Erener", "Ajda Pekkan", "Ergin Koray", 3);
 		database.SoruEkle(ha, vt, "What is the main programming language used for Android app development?", "Java", "Python",
 				"C#", "Ruby", 3);
+
+		database.SoruEkle(ha, vt, "Which ancient wonder of the world was a monumental tomb built for a queen?", "The Mausoleum at Halicarnassus",
+				"The Hanging Gardens of Babylon", "The Colossus of Rhodes", "The Great Pyramid of Giza", 3);
+
+		database.SoruEkle(ha, vt, "Which European explorer is known for discovering the sea route to India in the late 15th century?",
+				"Vasco da Gama", "Marco Polo", "Ferdinand Magellan", "Christopher Columbus", 3);
 
 		// /
 		database.SoruEkle(ha, vt, "Which country has Astana as its capital?", "Kazakhstan",
@@ -675,10 +681,11 @@ public class MainActivity extends Activity implements OnClickListener {
 		database.SoruEkle(ha, vt, "Where is the Cave of the Seven Sleepers (Ashabı Kehf)?", "Tarsus",
 				"Silifke", "Mut", "Erdemli", 4);
 		database.SoruEkle(ha, vt, "Where were the 2013 Mediterranean Games held?", "Mersin", "Alanya", "Muğla", "Antalya", 4);
-		database.SoruEkle(ha, vt,
-				"How many tortoises are there in the painting 'The Tortoise Trainer'?", "5", "4", "6", "7", 4);
+		database.SoruEkle(ha, vt, "How many tortoises are there in the painting 'The Tortoise Trainer'?", "5", "4", "6", "7", 4);
 		database.SoruEkle(ha, vt, "How much is a person beaten?", "Until Fenerbahçe wins the cup", "Until the donkey comes from the pasture",
 				"Until the bees make honey", "Until the cow eats the straw", 4);
+		database.SoruEkle(ha, vt, "Who is the philosopher known for the concept of the \"categorical imperative\" in ethics?",
+				"Immanuel Kant", "John Stuart Mill", "Jean-Jacques Rousseau", "Søren Kierkegaard", 4);
 
 	}
 
