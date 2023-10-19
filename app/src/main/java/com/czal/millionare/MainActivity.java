@@ -630,7 +630,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		database.SoruEkle(ha, vt, "Who is the founder of Facebook?",
 				"Mark Zuckerberg", "Larry Page", "Steve Jobs", "Bill Gates", 1);
 		database.SoruEkle(ha, vt, "What sport is Tiger Woods associated with?",
-				"Golf", "Tennis", "Greco-Roman Wrestling", "Swimming", 1);
+				"Golf", "Tennis", "Greco-Roman Wrestling", "Swimming", 2);
 		database.SoruEkle(ha, vt, "How many legs do humans have?", "2", "3",
 				"5", "0", 1);
 		database.SoruEkle(ha, vt, "What is the chemical symbol for gold?", "Au", "Fe",
