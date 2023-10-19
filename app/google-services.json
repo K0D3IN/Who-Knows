@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924194685895",
+    "project_id": "millionare-1c5f9",
+    "storage_bucket": "millionare-1c5f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924194685895:android:e280c83407b40fb9dbcfe2",
+        "android_client_info": {
+          "package_name": "com.czal.millionare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfjGo3-SnlcfySZjB5n_Jh5rmvoSUl69A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

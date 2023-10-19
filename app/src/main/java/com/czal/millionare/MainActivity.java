@@ -68,9 +68,9 @@ public class MainActivity extends Activity implements OnClickListener {
 			ayarlar.edit().putBoolean("ilkAcilisMi", false).commit();
 		}
 
-		SorulariHazirla(); // Ekrana bas�lacak sorular haz�rlan�yor.
+		SorulariHazirla(); // Ekrana basılacak sorular hazırlan�yor.
 
-		cevaplariRastgeleAta(soruSayisi); // Cevaplar atan�yor.
+		cevaplariRastgeleAta(soruSayisi); // Cevaplar atanıyor.
 
 	}
 
@@ -104,11 +104,11 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	private void alertCagirSeyirci() {
 		final AlertDialog.Builder alertbox2 = new AlertDialog.Builder(this);
-		alertbox2.setTitle("Seyirci Tahmini");
+		alertbox2.setTitle("audience forecast");
 		alertbox2.setMessage(seyirciJoker());
 		alertbox2.setIcon(R.drawable.hakkimizdaicon);
 
-		alertbox2.setPositiveButton("Tamam",
+		alertbox2.setPositiveButton("OK",
 				new DialogInterface.OnClickListener() {
 
 					@Override
@@ -129,11 +129,11 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	private void alertCagirTelefon() {
 		final AlertDialog.Builder alertbox2 = new AlertDialog.Builder(this);
-		alertbox2.setTitle("Aran�yor...");
+		alertbox2.setTitle("Calling...");
 		alertbox2.setMessage(telefonJokeri(dogru_cevap));
 		alertbox2.setIcon(R.drawable.hakkimizdaicon);
 
-		alertbox2.setPositiveButton("Tamam",
+		alertbox2.setPositiveButton("OK",
 				new DialogInterface.OnClickListener() {
 
 					@Override
@@ -149,15 +149,15 @@ public class MainActivity extends Activity implements OnClickListener {
 		Random rnd = new Random();
 		int tahmin = rnd.nextInt(4);
 		if (tahmin == 0) {
-			sonuc = "Cevap Kesinlikle " + cevap + " ��kk�";
+			sonuc = "The answer is definitely option " + cevap;
 		} else if (tahmin == 1) {
-			sonuc = "Cevap B�y�k �htimalle " + cevap;
+			sonuc = "The answer is probably " + cevap;
 		} else if (tahmin == 2) {
-			sonuc = "Cevap San�r�m " + cevap + " Olabilir";
+			sonuc = "I think the answer might be " + cevap ;
 		} else if (tahmin == 3) {
-			sonuc = "Emin De�ilim ama " + cevap + " ��kk�d�r Bence";
+			sonuc = "I'm not sure but I think it's option " + cevap;
 		} else if (tahmin == 4) {
-			sonuc = "�zg�n�m Cevap Veremiyorum. Konu Hakk�nda Pek Bilgim Yok";
+			sonuc = "I'm sorry i don't know";
 		}
 
 		return sonuc;
@@ -340,9 +340,9 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	private void alertCagir(final String cevap) {
 		final AlertDialog.Builder alertbox2 = new AlertDialog.Builder(this);
-		alertbox2.setTitle("Emin misiniz?");
+		alertbox2.setTitle("Are You Sure?");
 		alertbox2.setIcon(R.drawable.hakkimizdaicon);
-		alertbox2.setNegativeButton("Hay�r",
+		alertbox2.setNegativeButton("No",
 				new DialogInterface.OnClickListener() {
 
 					@Override
@@ -350,7 +350,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 					}
 				});
-		alertbox2.setPositiveButton("Evet Son Karar�m", // R.string.evet,
+		alertbox2.setPositiveButton("Yes, i'm sure", // R.string.evet,
 				new DialogInterface.OnClickListener() {
 
 					@Override
@@ -363,11 +363,11 @@ public class MainActivity extends Activity implements OnClickListener {
 		alertbox2.show();
 	}
 
-	/* Geri Tu�una bas�ld���nda */
+	/* Geri Tuşuna basıldığında */
 	private void OyundanCikmaIstegi() {
 		final AlertDialog.Builder alertbox2 = new AlertDialog.Builder(this);
-		alertbox2.setTitle("Oyundan ��kmak istedi�inize emin misiniz?");
-		alertbox2.setPositiveButton("Tamam",
+		alertbox2.setTitle("Oyundan çıkmak istediğinize emin misiniz?");
+		alertbox2.setPositiveButton("OK",
 				new DialogInterface.OnClickListener() {
 
 					@Override
@@ -375,7 +375,7 @@ public class MainActivity extends Activity implements OnClickListener {
 						finish();
 					}
 				});
-		alertbox2.setNegativeButton("Hay�r",
+		alertbox2.setNegativeButton("No",
 				new DialogInterface.OnClickListener() {
 
 					@Override
@@ -566,6 +566,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		// Toast.LENGTH_SHORT).show();
 	}
 
+
 	public static int[] rastgeleIdUret(int toplam) {
 
 		Random rnd = new Random();
@@ -613,7 +614,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		return dizi;
 	}
 
-	/* Oyundaki iken geri tu�una bas�l�rsa */
+
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 
@@ -624,52 +625,61 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 
 	private void SorulariEkle() {
-		database.SoruEkle(ha, vt, "Türkiyenin Başkenti Neresidir?", "Ankara",
-				"Erzurum", "Iğdır", "Hakkari", 1);
-		database.SoruEkle(ha, vt, "Facebook'un kurucusu kimdir?",
-				"Mark Zuckenberg", "Larry Page", "Steve Jobs", "Bill Gates", 1);
-		database.SoruEkle(ha, vt, "Tiger Woods hangi sporla uğraşmaktadır?",
-				"Golf", "Tenis", "Grekoromen G�re�", "Yüzme", 1);
-		database.SoruEkle(ha, vt, "İnsanların Kaç Ayağı Vardır?", "2", "3",
+		database.SoruEkle(ha, vt, "What is the Capital of Turkey?", "Ankara",
+				"Erzurum", "Igdır", "Hakkari", 1);
+		database.SoruEkle(ha, vt, "Who is the founder of Facebook?",
+				"Mark Zuckerberg", "Larry Page", "Steve Jobs", "Bill Gates", 1);
+		database.SoruEkle(ha, vt, "What sport is Tiger Woods associated with?",
+				"Golf", "Tennis", "Greco-Roman Wrestling", "Swimming", 1);
+		database.SoruEkle(ha, vt, "How many legs do humans have?", "2", "3",
 				"5", "0", 1);
+		database.SoruEkle(ha, vt, "What is the chemical symbol for gold?", "Au", "Fe",
+				"Ag", "Hg",1);
+		database.SoruEkle(ha, vt, "Who painted the Mona Lisa?", "Leonardo da Vinci", "Vincent van Gogh",
+				"Pablo Picasso", "Michelangelo",1);
+		database.SoruEkle(ha, vt, "In mathematics, what is the value of π (pi) to two decimal places?", "3.14", "2.71",
+				"1.62", "6.29",1);
+
+
 		// /
-		database.SoruEkle(ha, vt, "�lk T�rk Psikolojik Roman ? ", "Eyl�l",
-				"�al�ku�u", "Araba Sevdas�", "Sefiller", 2);
-		database.SoruEkle(ha, vt, "Hz. Ali Efendimizin K�l�c�n�n Ad� Nedir?",
-				"Z�lfikar", "Abuzer", "Ebu �uyh", "�smet", 2);
-		database.SoruEkle(ha, vt, "Saltanat Ka� Y�l�nda Kald�r�lm��t�r?",
-				"1 Kas�m 1922", "1 Kas�m 1923", "23 Kas�m 1922",
-				"23 Nisan 1923", 2);
-		database.SoruEkle(ha, vt, "At üstünde Oynananılan Türk Sporu?",
-				"Cirit", "At yarışı", "Polo", "Kriket", 2);
+		database.SoruEkle(ha, vt, "The First Turkish Psychological Novel? ", "Eylül",
+				"Çalı Kuşu", "Araba Sevdası", "Les Misérables", 2);
+		database.SoruEkle(ha, vt, "What is the name of the sword of Hz. Ali?", "Zulfiqar", "Abuzer", "Ebu Şuyh", "Ismet", 2);
+		database.SoruEkle(ha, vt, "In which year was the monarchy abolished?", "November 1, 1922", "November 1, 1923",
+				"November 23, 1922", "April 23, 1923", 2);
+		database.SoruEkle(ha, vt, "What Turkish sport is played on horseback?", "Cirit", "Horse Racing", "Polo", "Cricket", 2);
+		database.SoruEkle(ha, vt, "Which of the following is not a primary color in the subtractive color model?", "green",
+				"red", "blue", "yellow",2);
+		database.SoruEkle(ha, vt, "What is the value of 3² (3 squared)?", "9",
+				"6", "27", "12",2);
 		// //
-		database.SoruEkle(ha, vt, "Lale Devri Kaç Yıl Sürmüştür?", "12", "15",
-				"11", "Laleler Bitene Kadar", 3);
-		database.SoruEkle(ha, vt, "Türkiye'de ilk Matbaayı Kim Kurmuştur?",
-				"Ibrahim Müteferrika", "Yazar Hüseyin", "Ibn-i Galip",
-				"Ismet Inönü", 3);
+		database.SoruEkle(ha, vt, "How many years did the Tulip Era last?", "12", "15", "11", "Until the Tulips Withered", 3);
+		database.SoruEkle(ha, vt, "Who established the first printing press in Turkey?", "Ibrahim Müteferrika", "Yazar Hüseyin",
+				"Ibn-i Galip", "Ismet Inönü", 3);
 		database.SoruEkle(
 				ha,
 				vt,
-				"Narlar ve Ayvalar Adl� Tablosu Hayattayken Louvre M�zeyisine Kabul Edilen �lk T�rk Ressam Kimdir?",
-				"�eker Ahmet Pa�a", "Naci Kalmuko�lu", "Osman Hamdi Bey",
-				"�brahim �all�", 3);
+				"Who is the first Turkish painter whose painting 'Pomegranates and Quinces' was accepted into the Louvre Museum while he was alive?",
+				"Şeker Ahmet Paşa", "Naci Kalmukoğlu", "Osman Hamdi Bey",
+				"İbrahim Valla", 3);
 		database.SoruEkle(ha, vt,
-				"Eurovision'a Kat�lan �lk T�rk Sanat�� Kimdir?",
-				"Semiha Yank�", "Sertap Erener", "Ajda Pekkan", "Ergin Koray",
+				"Who is the first Turkish artist to participate in Eurovision?",
+				"Semiha Yankı", "Sertap Erener", "Ajda Pekkan", "Ergin Koray",
 				3);
+		database.SoruEkle(ha, vt, "What is the main programming language used for Android app development?", "Java", "Python",
+				"C#", "Ruby", 3);
+
 		// /
-		database.SoruEkle(ha, vt, "Ba�kenti Astana Olan �lke ?", "Kazakistan",
-				"�zbekistan", "K�rg�zistan", "Tacikistan", 4);
-		database.SoruEkle(ha, vt, "Ashab� Kehf Nerededir?", "Tarsus",
-				"Silifke", "Ma�ka", "Erdemli", 4);
-		database.SoruEkle(ha, vt, "2013 Akdeniz Oyunlar� Nerede Yap�lm��t�r?",
-				"Mersin", "Alanya", "Mu�la", "Antalya", 4);
+		database.SoruEkle(ha, vt, "Which country has Astana as its capital?", "Kazakhstan",
+				"Uzbekistan", "Kyrgyzstan", "Tajikistan", 4);
+		database.SoruEkle(ha, vt, "Where is the Cave of the Seven Sleepers (Ashabı Kehf)?", "Tarsus",
+				"Silifke", "Mut", "Erdemli", 4);
+		database.SoruEkle(ha, vt, "Where were the 2013 Mediterranean Games held?", "Mersin", "Alanya", "Muğla", "Antalya", 4);
 		database.SoruEkle(ha, vt,
-				"Kaplumba�a Terbiyecisi Resminde Ka� Kaplumba�a Vard�r?", "5",
-				"4", "6", "7", 4);
-		database.SoruEkle(ha, vt, "Bir �nsan Ne Kadar D�v�l�r?",
-				"E�ek Sudan Gelene Kadar", "E�ek �ay�rdan Gelene Kadar",
-				"Ar�lar Bal Yapana Kadar", "Fener Kupay� Alana Kadar", 4);
+				"How many tortoises are there in the painting 'The Tortoise Trainer'?", "5", "4", "6", "7", 4);
+		database.SoruEkle(ha, vt, "How much is a person beaten?", "Until Fenerbahçe wins the cup", "Until the donkey comes from the pasture",
+				"Until the bees make honey", "Until the cow eats the straw", 4);
+
 	}
+
 }

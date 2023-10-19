@@ -51,34 +51,34 @@ public class FinalEkranActivity extends Activity {
 				finish();
 			}
 		});
-		// Toast.makeText(getApplicationContext(), ""+sayi,
-		// Toast.LENGTH_SHORT).show();
+		 //Toast.makeText(getApplicationContext(), ""+sayi,
+		 //Toast.LENGTH_SHORT).show();
 	}
 
 	private void cekilmeIstegi(int sayi) {
 		com.czal.millionare.ParaDegeri pd = new com.czal.millionare.ParaDegeri();
-		txt1.setText("TEBR�KLER");
-		txt2.setText(pd.paraDegeri(sayi) + " TL");
-		txt3.setText("KAZANDINIZ");
+		txt1.setText("Congratulations");
+		txt2.setText("You Won");
+		txt3.setText(pd.paraDegeri(sayi) + " TL");
 	}
 
 	private void yanlisCevapBitir(int sayi) {
 		if (sayi <= 1) {
-			txt1.setText("�ZG�N�M");
-			txt2.setText("YANLI� CEVAP");
-			txt3.setText("KAYBETT�N�Z");
+			txt1.setText("SORRY!");
+			txt2.setText("Wrong Answer");
+			txt3.setText("You Lose");
 		} else if (sayi > 1 && sayi < 7) {
-			txt1.setText("YANLI� CEVAP");
-			txt2.setText("1000 TL");
-			txt3.setText("KAZANDINIZ");
+			txt1.setText("Wrong Answer!");
+			txt2.setText("You Won");
+			txt3.setText("1000 TL");
 		} else if (sayi >= 7 && sayi < 11) {
-			txt1.setText("YANLI� CEVAP");
-			txt2.setText("15000 TL");
-			txt3.setText("KAZANDINIZ");
+			txt1.setText("Wrong Answer!");
+			txt2.setText("You Won");
+			txt3.setText("15000 TL");
 		} else if (sayi == 11) {
-			txt1.setText("TEBR�KLER");
-			txt2.setText("1000000 TL");
-			txt3.setText("KAZANDINIZ");
+			txt1.setText("Congratulations");
+			txt2.setText("You Won");
+			txt3.setText("1000000 TL");
 		}
 	}
 

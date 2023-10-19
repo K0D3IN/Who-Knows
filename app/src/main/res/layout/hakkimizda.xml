@@ -14,7 +14,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OYUN HAKKINDA BİLGİLER"
+        android:text="ABOUT THE GAME"
         android:layout_gravity="center" />
 
     <TextView
@@ -28,7 +28,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Geliştiriciler Hakkında"
+        android:text="ABOUT THE DEVS"
         android:layout_gravity="center" />
      
  <TextView

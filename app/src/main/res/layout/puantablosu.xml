@@ -171,14 +171,14 @@
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:textSize="11dp"
-        android:text="Sonraki Soru"
+        android:text="Next Question"
         android:background="@drawable/btnstil_selector" />
             <Button
         android:id="@+id/btnCekil"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:textSize="11dp"
-        android:text="Çekilmek İstiyorum" 
+        android:text="Withdraw"
         android:layout_marginLeft="15dp"
         android:background="@drawable/btnstil_selector"/>
         
