@@ -657,6 +657,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		database.SoruEkle(ha, vt, "What is the value of 3² (3 squared)?", "9",
 				"6", "27", "12",2);
+		database.SoruEkle(ha, vt, "If a circle has a radius of 5 units, what is its circumference?","10π units", "5π units", "15π units", "7π units", 3);
 		// //
 		database.SoruEkle(ha, vt, "How many years did the Tulip Era last?", "12", "15", "11", "Until the Tulips Withered", 3);
 		database.SoruEkle(ha, vt, "Who established the first printing press in Turkey?", "Ibrahim Müteferrika", "Yazar Hüseyin",
