@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.czal.millionare.Menu"
+            android:screenOrientation="landscape"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.czal.millionare.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.czal.millionare.AcilisEkrani"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.czal.millionare.PuanActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.czal.millionare.HakkimizdaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.czal.millionare.FinalEkranActivity"
+            android:label="@string/title_activity_final_ekran" >
+        </activity>
+    </application>
+
+</manifest>

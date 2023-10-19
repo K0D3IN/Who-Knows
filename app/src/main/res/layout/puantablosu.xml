@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" android:background="#000033" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/puanarka"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/soruarkarenk" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.000.000 TL" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250.000 TL" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="125.000 TL" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60.000 TL" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30.000 TL" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15.000 TL" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.500 TL" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.000 TL" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.000 TL" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.000 TL" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.000 TL" />
+        </TableRow>
+ 
+        <TableRow android:background="@drawable/soruarkarenk"
+            android:id="@+id/tableRow12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500 TL" />
+        </TableRow>
+
+       
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+    android:orientation="horizontal" 
+    android:layout_marginTop="5dp" >
+           <Button
+        android:id="@+id/btnSonraki"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textSize="11dp"
+        android:text="Sonraki Soru"
+        android:background="@drawable/btnstil_selector" />
+            <Button
+        android:id="@+id/btnCekil"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textSize="11dp"
+        android:text="Çekilmek İstiyorum" 
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/btnstil_selector"/>
+        
+    </LinearLayout>
+
+ 
+
+</LinearLayout>

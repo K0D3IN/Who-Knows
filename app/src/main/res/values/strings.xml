@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kim Bilir?</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="soru">Soru Ekranı</string>
+    <string name="menu">Menü Ekranı</string>
+    <string name="acilis">Açılış Ekranı</string>
+    <string name="tablo">Puan Tablosu Ekranı</string>
+    <string name="hakkimizda">Kim Bilir? bilgi yarışması kullanıcıların sıkılmadan oynayabilecekleri bir yarışma olması için tasarlanmıştır. Birkaç önemli nokta bulunmaktadır.\nOyunda her an kullanabileceğiniz 3 adet joker hakkınız bulunmaktadır.\n
+Bunlar,\n
+*Telefon Jokeri\n
+*Yarı Yarıya Jokeri\n
+*Seyirciye Sorma Jokeri\n
+
+Soruların bilinmesi halinde kazanacağınız ödüller şu şekilde sıralanabilir,\n
+12.Soru -> 1.000.000 TL\n
+11.Soru -> 250.000 TL\n
+10.Soru -> 125.000 TL\n
+9.Soru  -> 60.000 TL\n
+8.Soru  -> 30.000 TL\n
+7.Soru  -> 15.000 TL\n
+6.Soru  -> 7.500 TL\n
+5.Soru  -> 5.000 TL\n
+4.Soru  -> 3.000 TL\n
+3.Soru  -> 2.000 TL\n
+2.Soru  -> 1.000 TL\n
+1.Soru  -> 500 TL\n
+\n
+Oyunda ödül değerleri arttıkça soruların zorlaşmasıda söz konusu olmaktadır.\n</string>
+    <string name="hakkimizda2">Uygulama\n
+-> Mübeşşir Yusuf AKHAN\n
+-> İpek DEMİRYÜREK\n
+-> Muammer ACAR\n
+-> Alper Efe YETER\n
+tarafından geliştirilmiştir. Her türlü görüş ve önerilerinizi byappsdvlp@gmail.com veya k0d3in@dnmx.org adresine gönderebilirsiniz.\n
+İyi Eğlenceler...</string>
+    <string name="title_activity_final_ekran">FinalEkranActivity</string>
+
+</resources>
